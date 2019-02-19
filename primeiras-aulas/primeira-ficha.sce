@@ -8,7 +8,6 @@ A = evstr(x_dialog('Indique o valor de A: ', ''))
 B = -8*A;
 
 
-
 printf('O resultado é: %d.', B)
 
 disp('O resultado é: ' + string(B) + ".")
