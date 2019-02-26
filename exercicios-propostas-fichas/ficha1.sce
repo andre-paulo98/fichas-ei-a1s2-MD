@@ -20,13 +20,11 @@ printf("\n")
 
 
 resultadoA = (cos((5 * %pi)/6) ^ (2))
-resultadoB = (sin((7 * %pi)/8) ^ 2)
+resultadoB = (sin(((7 * %pi)/8)^ 2))
 resultadoC = ((tan((%pi/6)*log(8)))/(sqrt(7)))
 
 resultado = (resultadoA * resultadoB) + resultadoC
 disp("1 d) = " + string(resultado))
-printf("expected: 1.4395045")
-// verificar esta formula
 
 
 clear()
