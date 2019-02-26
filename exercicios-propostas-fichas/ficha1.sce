@@ -29,7 +29,7 @@ disp("1 d) = " + string(resultado))
 
 clear()
 printf("\n\n")
-printf("-------------------------------------")
+printf("- 2. ------------------------------------")
 printf("\n\n")
 
 
@@ -56,7 +56,7 @@ disp("2 c) = " + string(resultado))
 
 clear()
 printf("\n\n")
-printf("-------------------------------------")
+printf("- 3. ------------------------------------")
 printf("\n\n")
 
 
@@ -89,7 +89,7 @@ disp("3 b) = " + string(resultado3B))
 
 
 printf("\n\n")
-printf("-------------------------------------")
+printf("- 4. ------------------------------------")
 printf("\n\n")
 
 
@@ -99,7 +99,7 @@ disp("3 b) O resultado obtido na alínea b) foi " + string(resultado3B))
 
 clear()
 printf("\n\n")
-printf("-------------------------------------")
+printf("- 5. ------------------------------------")
 printf("\n\n")
 
 
@@ -114,7 +114,7 @@ disp("p OU r = " + string(r))
 
 clear()
 printf("\n\n")
-printf("-------------------------------------")
+printf("- 6. ------------------------------------")
 printf("\n\n")
 
 
@@ -132,8 +132,25 @@ disp("(a | b) & (~b & c) = " + string(q))
 
 
 printf("\n\n")
-printf("-------------------------------------")
+printf("- 7. ------------------------------------")
 printf("\n\n")
+
+a = [1 1 1 1 0 0 0 0]
+b = [1 1 0 0 1 1 0 0]
+c = [1 0 1 0 1 0 1 0]
+
+q = (a | b) & (~b & c)
+
+tabela(:,1) = a'
+tabela(:,2) = b'
+tabela(:,3) = c'
+tabela(:,4) = q'
+
+// ou
+
+tab = [a' b' c' q']
+
+disp (tab)
 
 
 // tabelas de verdade ???
@@ -142,7 +159,7 @@ printf("\n\n")
 
 clear()
 printf("\n\n")
-printf("-------------------------------------")
+printf("- 8. ------------------------------------")
 printf("\n\n")
 
 
@@ -161,7 +178,7 @@ disp(r)
 
 clear()
 printf("\n\n")
-printf("-------------------------------------")
+printf("- 9. ------------------------------------")
 printf("\n\n")
 
 
@@ -171,7 +188,7 @@ q = [%f, %t, %f, %t]
 r = ~(p & (~p | q))
 t = ~(p & q)
 
-f = r == t
+f = (r == t)
 
 disp("Resultado: ")
 disp(f)
