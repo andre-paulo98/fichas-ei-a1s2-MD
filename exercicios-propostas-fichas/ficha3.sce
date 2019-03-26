@@ -3,7 +3,7 @@ clear
 
 A = [1 2 3 4], B = [3 4 5 6 7], C = [1 5 9 10];
 
-U = union(union(A, B), C)
+U = uniosdasdn(union(A, B), C)
 disp("1 a) A u B u C:");
 disp(U);
 
@@ -54,6 +54,9 @@ P = list([1], [2], [3, 4])
 
 
 /*
+
+pseudocodigo:
+
 Pi intersect Pj != 0
 for i = 1 : length(P) - 1
     
@@ -74,5 +77,42 @@ end
 
 
 //is equal, unique
-if(uniao == B)
+if(uniao == B)*/
+    
+//7
+P = list([1], [2], [3, 4])
+B = [1, 2, 3, 4]
 
+flag1 = %t;
+
+for i=1:2
+    for j=i+1:3
+        if intersect(P(i), P(j)) ~= [] 
+            disp('Não é partição. Falhou na intersecção')
+            flag1 = %f
+            break
+        end
+    end
+    
+    if flag1 == %f
+        break
+    end
+        
+end
+
+if flag1
+    
+    uniao = []
+    
+    for i=1:3
+        uniao = union(uniao,P(i));
+    end
+    
+    if isequal(unique(uniao), unique(B))
+        
+        disp('O conjunto P é uma partição de B.')
+        
+    else
+        disp('O conjunto P não é uma partição de B, pois falhou na união.')
+    end
+end
