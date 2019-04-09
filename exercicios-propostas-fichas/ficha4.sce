@@ -90,7 +90,7 @@ function verificaSerieNota()
         soma = soma + evstr(V(i))
     end
     
-    if(pmod(soma, 9) == 0) 
+    if(pmodulo(soma, 9) == 0) 
         disp ("o numero é válido")
     else
         disp ("não é válido")
