@@ -24,4 +24,33 @@ P = bool2s(Bm) // matriz com 0 e 1
 
 // ver se é unilateral
 P1 = bool2s(P + P')
-// como a triangular superor
+// como a triangular superior (ou inferior) não tem zeros, o grafo é unilateralmente conexo
+
+
+// tpc
+
+
+
+
+
+
+function I=conectividade(A)
+    
+    // I = 3  -> fortemente conexo
+    // I = 2  -> unilateralmente conexo
+    // I = 1  -> fracamente conexo
+    // I = 0  -> desconexo
+    
+    
+    [L, C] = size(A)
+    I = 3
+    
+    
+endfunction
+
+
+
+
+
+
+
